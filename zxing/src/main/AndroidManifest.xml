@@ -1,0 +1,26 @@
+<manifest package="com.google.zxing"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application>
+        <activity android:name=".CaptureActivity"
+                  android:screenOrientation="portrait"
+                  android:clearTaskOnLaunch="true"
+                  android:stateNotNeeded="true"
+                  android:theme="@style/CaptureTheme"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".extra.ScanCaptureActivity"
+            android:screenOrientation="portrait"
+            android:clearTaskOnLaunch="true"
+            android:stateNotNeeded="true"
+            android:theme="@style/CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+    </application>
+
+</manifest>
